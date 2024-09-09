@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin-image {
+  animation: spin 8s linear infinite;
+}
+::-webkit-scrollbar{
+  scrollbar-width: none;
+}
