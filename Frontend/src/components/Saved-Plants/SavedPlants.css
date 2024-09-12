@@ -1,0 +1,72 @@
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    text-align: center;
+    color: #4a7c59; /* Adjust color to match your theme */
+    font-family: 'Nerko One', cursive;
+  }
+  
+  .plants-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 2rem;
+  }
+  
+  .plant-card {
+    background: #fdfdfd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .plant-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .plant-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .plant-info {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .plant-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .plant-scientific-name {
+    font-size: 0.9rem;
+    color: #7d7d7d;
+    margin-bottom: 1rem;
+  }
+  
+  .remove-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .no-plants-message {
+    font-size: 1.2rem;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  

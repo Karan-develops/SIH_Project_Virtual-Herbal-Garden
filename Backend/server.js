@@ -10,7 +10,6 @@ app.get("/api/plants", async (req, res) => {
   const { page, filter } = req.query;
   let query = page ? `&page=${page}` : "";
 
-  // Add filtering if the filter parameter is present
   if (filter) {
     query += `&filter[common_name]=${encodeURIComponent(filter)}`;
   }
@@ -20,10 +19,7 @@ app.get("/api/plants", async (req, res) => {
       `https://trefle.io/api/v1/plants?token=-OZ9S7Hdvr4emdBDZVWeTvYljfg4XDesWTBFjRW32r8${query}`
     );
     const data = await response.json();
-
-    // Log the response to check the structure
-    console.log("API Response:", data);
-
+    // console.log("API Response:", data);
     res.json(data);
   } catch (error) {
     console.error("Error fetching data:", error);
