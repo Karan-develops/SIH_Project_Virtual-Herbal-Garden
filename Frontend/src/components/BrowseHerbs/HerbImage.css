@@ -1,0 +1,44 @@
+.image-container {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.flower-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.flower-info {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  transition: bottom 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.flower-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+.flower-scientific-name {
+  font-size: 14px;
+  font-style: italic;
+}
+.image-container:hover .flower-info {
+  bottom: 0;
+}
+.image-container:hover .flower-image {
+  transform: scale(1.05);
+}

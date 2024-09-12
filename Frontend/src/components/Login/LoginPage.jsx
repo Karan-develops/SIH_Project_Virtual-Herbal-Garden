@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import a from "../../assets/b.png";
+import NavLogin from "./NavLogin";
 
 const LoginPage = () => {
   const {
@@ -32,19 +33,19 @@ const LoginPage = () => {
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center"
       style={{
         backgroundImage: `url(${a})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
+      <NavLogin />
       {isSubmitting && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="text-white text-xl">Loading...</div>
         </div>
       )}
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br">
+      <div className="h-[91.2vh] flex items-center justify-center bg-gradient-to-br">
         <div className="bg-white bg-opacity-30 backdrop-blur-md rounded-lg shadow-2xl p-8 w-[50vw] max-w-md border border-green-200">
           <h2 className="text-3xl font-bold text-center text-green-900 mb-6">
             Garden Login Gate

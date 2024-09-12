@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const LogoutBtn = () => {
   return (
@@ -10,7 +10,7 @@ const LogoutBtn = () => {
         Logout
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default LogoutBtn
+export default LogoutBtn;

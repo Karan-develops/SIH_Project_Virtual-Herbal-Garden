@@ -11,6 +11,8 @@ import {
 import LoginPage from "./components/Login/LoginPage.jsx";
 import SignupPage from "./components/Sign-up/SignupPage.jsx";
 import BrowseHerbs from "./components/BrowseHerbs/BrowseHerbs.jsx";
+import SavedPlants from "./components/Saved-Plants/SavedPlants.jsx";
+import MainDetails from "./components/Plant-Details/MainDetails.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +21,8 @@ const router = createBrowserRouter(
       <Route path="/signup" element={<SignupPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/herbs" element={<BrowseHerbs />} />
+      <Route path="/savedPlants" element={<SavedPlants/>}/>
+      <Route path="/abc" element={<MainDetails />} />
     </Route>
   )
 );

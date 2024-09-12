@@ -2,11 +2,20 @@ import React from "react";
 import LoginBtn from "./Login/LoginBtn";
 import SignupBtn from "./Sign-up/SignupBtn";
 import nav from "../assets/nav.jpeg";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleLogoClick = () => {
+    navigate("/");
+  };
   return (
-    <div className="flex justify-between w-full h-16 bg-white font-nerko">
-      <div className="flex mx-16 gap-2">
+    <div className="flex justify-between sticky top-0 w-full h-16 bg-white font-nerko">
+      <div
+        className="flex mx-16 gap-2 hover:cursor-pointer"
+        onClick={handleLogoClick}
+      >
         <div>
           <img src={nav} alt="nav" className="w-10 h-10 mt-2 spin-image" />
         </div>
@@ -18,19 +27,29 @@ const Navbar = () => {
 
       <ul className="flex font-bold items-center gap-10 text-xl">
         <li>
-          <a className="hover:text-green-600" href="">Home</a>
+          <Link to={"/"} className="hover:text-green-600" href="">
+            Home
+          </Link>
         </li>
         <li>
-          <a className="hover:text-green-600" href="">Virtual Tour</a>
+          <Link to={"/herbs"} className="hover:text-green-600" href="">
+            Browse Herbs
+          </Link>
         </li>
         <li>
-          <a className="hover:text-green-600" href="">Blog</a>
+          <Link to={"/savedPlants"} className="hover:text-green-600" href="">
+            Saved Plants
+          </Link>
         </li>
         <li>
-          <a className="hover:text-green-600" href="">About</a>
+          <Link className="hover:text-green-600" href="">
+            About
+          </Link>
         </li>
         <li>
-          <a className="hover:text-green-600" href="">Contact</a>
+          <Link className="hover:text-green-600" href="">
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="flex">

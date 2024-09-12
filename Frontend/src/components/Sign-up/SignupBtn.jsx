@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 const SignupBtn = () => {
   const navigate = useNavigate();
-  const handleButtonClick = () =>{
-    navigate("/herbs");
-  }
+  const handleButtonClick = () => {
+    navigate("/signup");
+  };
   return (
     <div>
       <div className="p-3">

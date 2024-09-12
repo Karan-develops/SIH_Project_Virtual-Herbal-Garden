@@ -20,7 +20,7 @@ function Marquee() {
               duration: 10,
               delay: 1,
             }}
-            className="text-[3vw] leading-none uppercase px-2 py-3 font-bold pr-10"
+            className="text-[2vw] leading-none uppercase px-2 py-3 font-bold pr-10"
           >
             Immursive Virtual Herbal Garden🌿
           </motion.h1>
@@ -33,7 +33,7 @@ function Marquee() {
               duration: 10,
               delay: 1,
             }}
-            className="text-[3vw] leading-none uppercase px-2 py-3  font-bold pr-10"
+            className="text-[2vw] leading-none uppercase px-2 py-3  font-bold pr-10"
           >
             Immursive Virtual Herbal Garden🌿
           </motion.h1>
@@ -46,7 +46,7 @@ function Marquee() {
               duration: 10,
               delay: 1,
             }}
-            className="text-[3vw] leading-none uppercase px-2 py-3  font-bold pr-10"
+            className="text-[2vw] leading-none uppercase px-2 py-3  font-bold pr-10"
           >
             Immursive Virtual Herbal Garden🌿
           </motion.h1>

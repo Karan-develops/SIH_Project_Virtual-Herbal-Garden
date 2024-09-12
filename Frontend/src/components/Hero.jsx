@@ -15,7 +15,6 @@ const Hero = () => {
           <button className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg">
             Explore the Garden
           </button>
-          
         </div>
       </div>
     </section>
